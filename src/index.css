@@ -150,11 +150,4 @@ All colors MUST be HSL.
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
   }
-
-  .hero-bg {
-    background-image: url('./assets/indigo-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
 }
