@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import voucherphoto from '../assets/voucherp.png';
 
 export function VoucherSection() {
@@ -22,10 +19,10 @@ export function VoucherSection() {
           {/* Form fields */}
           <div className="space-y-3">
             <div className="space-y-1">
-              <Label htmlFor="nickname" className="text-sm font-medium text-muted-foreground">
+              <label htmlFor="nickname" className="text-sm font-medium text-muted-foreground">
                 WPISZ SWÓJ NICK
-              </Label>
-              <Input
+              </label>
+              <input
                 id="nickname"
                 type="text"
                 className="w-full border-b-2 border-t-0 border-l-0 border-r-0 rounded-none bg-transparent px-0 py-2 focus-visible:ring-0 focus-visible:border-primary"
@@ -33,10 +30,10 @@ export function VoucherSection() {
             </div>
 
             <div className="space-y-1">
-              <Label htmlFor="code" className="text-sm font-medium text-muted-foreground">
+              <label htmlFor="code" className="text-sm font-medium text-muted-foreground">
                 WPISZ KOD
-              </Label>
-              <Input
+              </label>
+              <input
                 id="code"
                 type="text"
                 className="w-full border-b-2 border-t-0 border-l-0 border-r-0 rounded-none bg-transparent px-0 py-2 focus-visible:ring-0 focus-visible:border-primary"
@@ -46,12 +43,12 @@ export function VoucherSection() {
 
           {/* Submit button */}
           <div className="pt-2">
-            <Button 
+            <button 
               className="bg-black hover:bg-black/90 text-white px-6 py-2 rounded-none font-medium"
               type="submit"
             >
               ZREALIZUJ
-            </Button>
+            </button>
           </div>
         </div>
 

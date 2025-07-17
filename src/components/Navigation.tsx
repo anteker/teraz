@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import head from '../assets/head.png';
 
 export const Navigation = () => {
@@ -31,9 +30,9 @@ export const Navigation = () => {
 
         {/* Przycisk po prawej */}
         <div className="absolute right-4 top-1/2 -translate-y-1/2">
-          <Button className="minecraft-button bg-indigo-primary hover:bg-indigo-dark text-white-primary border-white-primary">
+          <button className="minecraft-button bg-indigo-primary hover:bg-indigo-dark text-white-primary border-white-primary">
             SKLEP
-          </Button>
+          </button>
         </div>
       </div>
     </nav>

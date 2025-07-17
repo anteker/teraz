@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { FaDiscord } from "react-icons/fa";
 import discordp from '../assets/discord.png';
 import discordp2 from '../assets/discord1.png';
@@ -28,13 +27,13 @@ export function DiscordSection() {
         <p className="text-lg text-gray-600 mb-8">
           ABY BYĆ ZE WSZYSTKIM NA BIEŻĄCO
         </p>
-        <Button 
+        <button 
           className="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-full font-medium text-xl inline-flex items-center gap-3"
           onClick={() => window.open('https://discord.gg/UZdzNwxX8Y', '_blank')}
         >
           <FaDiscord size={24} />
           DOŁĄCZ
-        </Button>
+        </button>
       </div>
 
       {/* Right side - Discord widget */}
