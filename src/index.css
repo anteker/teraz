@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 100% 70%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 263 100% 70%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 263 100% 70%;
+
+    /* IndigoMC colors */
+    --indigo-primary: 263 100% 70%;
+    --indigo-dark: 263 100% 45%;
+    --indigo-light: 263 100% 85%;
+    --black-primary: 0 0% 8%;
+    --black-light: 0 0% 15%;
+    --white-primary: 0 0% 98%;
+    --white-muted: 0 0% 85%;
+
+    /* Gradients */
+    --gradient-indigo: linear-gradient(135deg, hsl(var(--indigo-primary)), hsl(var(--indigo-dark)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--black-primary)), hsl(var(--black-light)));
+
+    /* Shadows */
+    --shadow-indigo: 0 8px 32px hsla(var(--indigo-primary), 0.4);
+    --shadow-glow: 0 0 40px hsla(var(--indigo-primary), 0.5);
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 100% 70%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 263 100% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono;
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--indigo-primary)) 0%, transparent 70%),
+      radial-gradient(circle at 75% 75%, hsl(var(--indigo-dark)) 0%, transparent 70%),
+      linear-gradient(180deg, hsl(var(--black-primary)), hsl(var(--black-light)));
+    background-attachment: fixed;
+  }
+
+  .minecraft-text {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
+  }
+
+  .minecraft-button {
+    @apply font-bold py-3 px-6 rounded-none border-2;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    transition: all 0.1s ease;
+  }
+
+  .minecraft-button:hover {
+    @apply translate-x-1 translate-y-1;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  .minecraft-button:active {
+    @apply translate-x-2 translate-y-2;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  .hero-bg {
+    background-image: url('./assets/indigo-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
