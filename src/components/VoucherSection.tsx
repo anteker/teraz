@@ -57,7 +57,7 @@ export function VoucherSection() {
           <img
             src={voucherphoto}
             alt="Voucher grafika"
-            className="w-60 h-auto object-contain"
+            className="w-96 h-auto object-contain"
           />
         </div>
       </div>

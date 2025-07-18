@@ -1,21 +1,15 @@
 import { FaDiscord } from "react-icons/fa";
-import discordp from '../assets/discord.png';
-import discordp2 from '../assets/discord1.png';
+import discordp from '../assets/discordp.png';
 
 export function DiscordSection() {
   return (
     <div className="flex bg-gray-100 p-8 rounded-lg gap-12 items-center">
-      {/* Left side - Discord characters side by side */}
-      <div className="flex-shrink-0 ml-[70px] flex gap-6 items-end mr-20">
-        <img
-          src={discordp2}
-          alt="Discord Minecraft character 1"
-          className="w-72 h-auto object-contain"
-        />
+      {/* Left side - Discord image */}
+      <div className="flex-shrink-0 ml-[90px] flex gap-6 items-end mr-20">
         <img
           src={discordp}
-          alt="Discord Minecraft character 2"
-          className="w-56 h-auto object-contain"
+          alt="Discord Minecraft character"
+          className="w-72 h-auto object-contain"
         />
       </div>
 
