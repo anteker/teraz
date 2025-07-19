@@ -150,4 +150,16 @@ All colors MUST be HSL.
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #voucher-section {
+    scroll-margin-top: 150px;
+  }
+
+  #shop-section {
+    scroll-margin-top: 160px;
+  }
 }
